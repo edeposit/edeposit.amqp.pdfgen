@@ -1,13 +1,13 @@
 Licenční smlouva
 ================
 o dodávání elektronických publikací a jejich užití
-===================================================================
+==================================================
 
 Smluvní strany:
 ---------------
 
 Národní knihovna České republiky
-++++++++++++++++++++++++++++++++
+--------------------------------
 státní příspěvková organizace zřízená MK ČR
 
 :Sídlo: Klementinum 190, 110 00 Praha 1
@@ -15,12 +15,12 @@ státní příspěvková organizace zřízená MK ČR
 :DIČ: CZ00023221
 :Statutární orgán: Ing. Tomáš Böhm, generální ředitel
 
-dále jen *„Knihovna“*
+dále jen **„Knihovna“**
 
 a
 
 Firma/Jméno, příjmení:
-++++++++++++++++++++++
+----------------------
 :Právní forma: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 :Sídlo: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 :IČ: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
@@ -28,18 +28,18 @@ Firma/Jméno, příjmení:
 :Zastoupen: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 :Jednající: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 
-dále jako „Producent“
+dále jako **„Producent“**
 
 uzavírají níže uvedeného dne, měsíce a roku tuto
 
 licenční smlouvu
-----------------
+++++++++++++++++
 
 dle ust. § 1724 a násl. ve spojení s ust. § 2358 a násl. zákona č. 89/2012 Sb., občanský zákoník, v pl.
 znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 
 Úvod
-++++
+^^^^
 
 #. Úkolem Národní knihovny ČR je zachovávat písemné kulturní dědictví. S ohledem na dynamický vývoj digitálního publikování vyvstávají před Knihovnou do budoucna nové úkoly při ochraně a zachování kulturního dědictví i v digitální formě. Je nepochybné, že v současné době vzniká část kulturního bohatství v elektronické podobě a že do budoucna budou elektronické publikace zaujímat trvale významné místo na trhu, přičemž zveřejněné elektronické publikace nemají vždy svůj tištěný protějšek.
 
@@ -54,7 +54,8 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 #. S přihlédnutím na výše proklamované skutečnosti uzavírají Knihovna a Producent tuto licenční smlouvu za dále uvedených smluvních podmínek.
 
 Článek 1 - Předmět smlouvy
-++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 #. Knihovna a Producent se dohodli na vzájemné spolupráci při projektu *„NAKI - Správa elektronických publikací v síti knihoven ČR“*. Producent bude dodávat Knihovně elektronické rozmnoženiny publikací ze své produkce periodických či neperiodických publikací pořízených elektronicky, a to v autentickém formátu bez užití technických ochranných opatření, dále též jako **„e-publikace“**.
 
 #. Publikace vydané tiskem a současně zveřejněné elektronicky, a dále publikace zveřejněné pouze elektronicky (bez současného pořízení/vydání tiskem) nemusí mít přidělené číslo ISBN.
@@ -75,7 +76,8 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 #. Knihovna prohlašuje, že bude při nakládání s e-publikacemi postupovat v souladu s touto smlouvou, právními předpisy, poctivě a v dobré víře, v souladu s dobrými mravy.
 
 Článek 2 - Práva a povinnosti Producenta
-++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 #. Producent bude poskytovat Knihovně bez zbytečného odkladu počínaje uzavřením smlouvy veškeré podklady a informace potřebné k výkonu licence.
 
 #. Producent dodá Knihovně bezúplatně a na vlastní náklady u zveřejněných periodických či neperiodických elektronických publikací ze své produkce jednu elektronickou rozmnoženinu publikace ve formátech, termínech a postupem sjednaným v této smlouvě.
@@ -95,7 +97,8 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 #. K jednotlivým e-publikacím mohou Producent a Knihovna uzavřít písemný dodatek k této smlouvě nebo další licenční smlouvu, kterou upraví způsob užití e-publikace odlišně od této smlouvy.
 
 Článek 3 - Práva a povinnosti Národní knihovny ČR
-+++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Knihovna se zavazuje a je oprávněna:
 
 a) pořizovat a spravovat na vlastní náklady databázi dodaných e-publikací a vykonávat práva pořizovatele databáze ve smyslu § 88 a následujících autorského zákona,
@@ -107,7 +110,7 @@ c) nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uve
 d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
 
 Článek 4 Další ujednání, způsob dodávání e-publikací Knihovně
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. E-publikace dodá Producent Knihovně bez zbytečného odkladu od jejich zveřejnění.
 
@@ -120,7 +123,8 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Knihovna není povinna převzít od Producenta rozmnoženinu e-publikace, která nebude splňovat podmínky a technické parametry sjednané v této smlouvě. Knihovna není povinna zpřístupňovat uživatelům e-publikace poskytnuté dle této smlouvy. Knihovna není povinna licenci užívat.
 
 Článek 5 - Další práva a povinnosti smluvních stran
-+++++++++++++++++++++++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 #. Smluvní strany se dohodly, že veškerá plnění, která si dle této smlouvy poskytnou, a to včetně práv a souhlasů s užitím a zpracováním dat, jsou bezúplatná. Veškeré náklady spojené s k užití a zpracování dat, vytěžením a zužitkováním databáze nese Knihovna.
 
 #. Smluvní strany jsou povinny zdržet se jakékoliv činnosti, jež by mohla znemožnit nebo ztížit realizaci předmětu této smlouvy. Smluvní strany jsou povinny se vzájemně informovat dále o všech skutečnostech rozhodných pro řádné plnění této smlouvy.
@@ -132,7 +136,7 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Oprávnění Knihovny zpřístupňovat e-publikace včetně užití v rozsahu sjednaném dle této smlouvě zůstává beze změny zachováno i pro dobu po zrušení této smlouvy.
 
 Článek 6 - Další ustanovení
-+++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Vydavatelem periodického tisku je fyzická osoba nebo právnická osoba, která vydává periodický tisk dle § 3 písm. b) zákona č. 46/2000 Sb., tiskový zákon.
 
@@ -141,7 +145,7 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Knihovna může udělit jiné knihovně vyjmenované v ust. § 3 zákona č. 37/1995 Sb., v pl. znění písemně oprávnění k užití a zpřístupnění obsahu dodaných e-publikací (podlicence), avšak nejvýše v rozsahu stanoveném v ustanovení § 37 odst.1, písm. c) autorského zákona, tedy na koncových terminálech jiné knihovny a bez možnosti zhotovit další elektronické rozmnoženiny.
 
 Článek 7 - Závěrečná ustanovení
-+++++++++++++++++++++++++++++++
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. Tato smlouva se uzavírá na dobu neurčitou a nabývá platnosti a účinnosti v den jejího podpisu.
 
@@ -168,8 +172,6 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Obě smluvní strany potvrzují autentičnost této smlouvy a prohlašují, že si smlouvu přečetly, jejímu obsahu rozumí.
 
 
-|
-|
 |
 |
 | V Praze dne                                                                              V . . . . . . . . . . . . . . . . . . . dne . . . . . . . . . . . . . . . . . . . .
