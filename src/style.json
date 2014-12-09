@@ -1,0 +1,8 @@
+{
+    "fontsAlias" : {
+        "stdFont": "FreeSerif",
+        "stdBold": "FreeSerif-Bold",
+        "stdItalic": "FreeSerif-Oblique",
+        "stdBoldItalic": "FreeSerif-BoldOblique"
+    }
+}
