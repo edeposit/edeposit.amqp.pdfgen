@@ -13,6 +13,15 @@ from rst2pdf.createpdf import RstToPdf
 
 # Functions & classes =========================================================
 def _resource_context(fn):
+    """
+    Compose path to the ``resources`` directory for given `fn`.
+
+    Args:
+        fn (str): Filename of file in ``resources`` directory.
+
+    Returns:
+        str: Absolute path to the file in resources directory.
+    """
     return os.path.join(
         os.path.dirname(__file__),
         "resources",
@@ -21,6 +30,12 @@ def _resource_context(fn):
 
 
 def _init_pdf():
+    """
+    Initialize :class:`RstToPdf` class.
+
+    Returns:
+        obj: Initialized object.
+    """
     return RstToPdf(
         language="cs",
         font_path=[
@@ -38,6 +53,21 @@ def _init_pdf():
 
 
 def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
+    """
+    Compose contract and create PDF.
+
+    Args:
+        firma (str): firma
+        pravni_forma (str): pravni_forma
+        sidlo (str): sidlo
+        ic (str): ic
+        dic (str): dic
+        zastoupen (str): zastoupen
+        jednajici (str): jednajici
+
+    Returns:
+        obj: StringIO file instance containing PDF file.
+    """
     contract_fn = _resource_context(
         "Licencni_smlouva_o_dodavani_elektronickych_publikaci"
         "_a_jejich_uziti.rst"
@@ -75,16 +105,3 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
     out_file_obj.seek(0)
 
     return out_file_obj
-
-obj = get_contract(
-    "Franta Putšálek",
-    "Nope",
-    "Praha",
-    "27827272",
-    "73646723",
-    "Ne",
-    "Nekdo"
-)
-
-with open("test.pdf", "wb") as f:
-    f.write(obj.read())
