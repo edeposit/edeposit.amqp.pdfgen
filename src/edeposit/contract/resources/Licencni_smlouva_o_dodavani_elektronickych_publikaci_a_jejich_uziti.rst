@@ -19,14 +19,13 @@ dále jen **„Knihovna“**
 
 a
 
-Firma/Jméno, příjmení:
-----------------------
-:Právní forma: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-:Sídlo: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-:IČ: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-:DIČ: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-:Zastoupen: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-:Jednající: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+$firma
+:Právní forma: $pravni_forma
+:Sídlo: $sidlo
+:IČ: $ic
+:DIČ: $dic
+:Zastoupen: $zastoupen
+:Jednající: $jednajici
 
 dále jako **„Producent“**
 
