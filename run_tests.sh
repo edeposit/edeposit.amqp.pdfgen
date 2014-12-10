@@ -2,4 +2,4 @@
 
 PYTHONPATH="$PYTHONPATH:src/edeposit/contract"
 
-py.test "src/edeposit/contract/tests" --pdb
+py.test "src/edeposit/contract/tests"
