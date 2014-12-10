@@ -1,0 +1,6 @@
+*.pyc
+dist/*
+src/edeposit.contract.egg-info/*
+docs/_build
+MANIFEST
+*.html
