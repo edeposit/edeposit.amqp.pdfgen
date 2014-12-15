@@ -1,4 +1,4 @@
 include CONTRIBUTORS.rst CHANGES.rst README.rst LICENSE.txt
-recursive-exclude src/edeposit/contract/tests *
-recursive-include src/edeposit/contract/resources *
+recursive-exclude src/edeposit/pdfgen/tests *
+recursive-include src/edeposit/pdfgen/resources *
 recursive-include html_docs *

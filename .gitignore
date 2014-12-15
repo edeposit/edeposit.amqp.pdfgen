@@ -1,6 +1,6 @@
 *.pyc
 dist/*
-src/edeposit.contract.egg-info/*
+src/edeposit.pdfgen.egg-info/*
 docs/_build
 MANIFEST
 *.html

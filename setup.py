@@ -56,7 +56,7 @@ class BuildSphinx(sdist):
 
 
 setup(
-    name='edeposit.contract',
+    name='edeposit.pdfgen',
     version=getVersion(changelog),
     description="E-Deposit's AMQP binding to Long Time Preservation system.",
     long_description=long_description,
