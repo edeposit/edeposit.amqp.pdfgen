@@ -10,13 +10,20 @@ from tempfile import NamedTemporaryFile
 from rst2pdf.createpdf import RstToPdf
 
 
+# Variables ===================================================================
+FOOTER = "###Page###/###Total###"  #:
+
+
 # Functions & classes =========================================================
-def _init_pdf(style_path, header=None, footer="###Page###/###Total###"):
+def _init_pdf(style_path, header=None, footer=FOOTER):
     """
     Initialize :class:`RstToPdf` class.
 
     Args:
         style_path (str): Path to the style for the PDF.
+        header (str, default None): Header which will be rendered to each page.
+        footer (str, default FOOTER): Footer, which will be rendered to each
+               page. See :attr:`FOOTER` for details.
 
     Returns:
         obj: Initialized object.
@@ -38,7 +45,22 @@ def _init_pdf(style_path, header=None, footer="###Page###/###Total###"):
     )
 
 
-def gen_pdf(content, style_text, header=None, footer="###Page###/###Total###"):
+def gen_pdf(rst_content, style_text, header=None, footer=FOOTER):
+    """
+    Create PDF file from `rst_content` using `style_text` as style.
+
+    Optinally, add `header` or `footer`.
+
+    Args:
+        rst_content (str): Content of the PDF file in restructured text markup.
+        style_text (str): Style for the :mod:`rst2pdf` module.
+        header (str, default None): Header which will be rendered to each page.
+        footer (str, default FOOTER): Footer, which will be rendered to each
+               page. See :attr:`FOOTER` for details.
+
+    Returns:
+        obj: StringIO file instance containing PDF file.
+    """
     out_file_obj = StringIO()
 
     with NamedTemporaryFile() as f:
@@ -48,7 +70,7 @@ def gen_pdf(content, style_text, header=None, footer="###Page###/###Total###"):
         pdf = _init_pdf(f.name, header, footer)
 
     # create PDF
-    pdf.createPdf(text=content, output=out_file_obj)
+    pdf.createPdf(text=rst_content, output=out_file_obj)
 
     # rewind file pointer to begin
     out_file_obj.seek(0)
