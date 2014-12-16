@@ -5,9 +5,7 @@
 #
 # Imports =====================================================================
 import os.path
-from StringIO import StringIO
 from string import Template
-
 
 from translator import gen_pdf
 
