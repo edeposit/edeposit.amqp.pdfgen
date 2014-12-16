@@ -15,11 +15,11 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.converter import TextConverter
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 
-import translator
+import specialization
 
 
 # Variables ===================================================================
-filename = None
+FILENAME = None
 
 
 # Tests =======================================================================
@@ -48,8 +48,8 @@ def get_pdf_content(fp):
     return out.read()
 
 
-def test_translator():
-    obj = translator.get_contract(
+def test_get_contract():
+    obj = specialization.get_contract(
         "Franta Putšálek",
         "Nope",
         "Praha",
@@ -62,16 +62,16 @@ def test_translator():
     with NamedTemporaryFile(delete=False) as f:
         f.write(obj.read())
 
-        global filename
-        filename = f.name
+        global FILENAME
+        FILENAME = f.name
 
     example_fn = os.path.join(os.path.dirname(__file__), "example.pdf")
 
     ex_content = get_pdf_content(open(example_fn))
-    tmp_content = get_pdf_content(open(filename))
+    tmp_content = get_pdf_content(open(FILENAME))
 
     assert ex_content == tmp_content
 
 
 def teardown_module():
-    os.unlink(filename)
+    os.unlink(FILENAME)
