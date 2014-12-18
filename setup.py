@@ -56,11 +56,11 @@ class BuildSphinx(sdist):
 
 
 setup(
-    name='edeposit.pdfgen',
+    name='edeposit.amqp.pdfgen',
     version=getVersion(changelog),
-    description="E-Deposit's AMQP binding to Long Time Preservation system.",
+    description="E-Deposit's AMQP bindings to PDF generation libraries.",
     long_description=long_description,
-    url='https://github.com/edeposit/edeposit.contract/',
+    url='https://github.com/edeposit/edeposit.amqp.pdfgen/',
 
     author='Edeposit team',
     author_email='edeposit@email.cz',
@@ -78,7 +78,7 @@ setup(
 
     # scripts=[''],
 
-    namespace_packages=['edeposit'],
+    namespace_packages=['edeposit', 'edeposit.amqp'],
     include_package_data=True,
     zip_safe=False,
     install_requires=[

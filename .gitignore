@@ -1,6 +1,6 @@
 *.pyc
 dist/*
-src/edeposit.pdfgen.egg-info/*
+src/edeposit.amqp.pdfgen.egg-info/*
 docs/_build
 MANIFEST
 *.html
