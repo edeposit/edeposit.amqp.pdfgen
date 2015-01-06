@@ -4,17 +4,22 @@
 # Interpreter version: python 2.7
 #
 # Imports =====================================================================
-
-
-
-# Variables ===================================================================
-
+from collections import namedtuple
 
 
 # Functions & classes =========================================================
+class GenerateContract(namedtuple("GenerateContract", ["firma",
+                                                       "pravni_forma",
+                                                       "sidlo",
+                                                       "ic",
+                                                       "dic",
+                                                       "zastoupen",
+                                                       "jednajici"])):
+    pass
 
 
-
-# Main program ================================================================
-if __name__ == '__main__':
+class RST2PDF(namedtuple("RST2PDF", ["rst_source",
+                                     "style",
+                                     "header",
+                                     "footer"])):
     pass
