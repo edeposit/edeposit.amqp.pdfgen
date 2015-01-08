@@ -4,7 +4,8 @@
 # Interpreter version: python 2.7
 #
 # Imports =====================================================================
-from structures import *
+from structures.requests import GenerateContract, RST2PDF
+from structures.responses import pdf_from_file
 from translator import gen_pdf
 from specialization import get_contract
 
@@ -34,21 +35,12 @@ def reactToAMQPMessage(message, UUID=None):
         ValueError: if bad type of `message` structure is given.
     """
     if _instanceof(message, GenerateContract):
-        return get_contract(
-            message.firma,
-            message.pravni_forma,
-            message.sidlo,
-            message.ic,
-            message.dic,
-            message.zastoupen,
-            message.jednajici,
-        ).read()
+        return pdf_from_file(
+            get_contract(**message._asdict())
+        )
     elif _instanceof(message, RST2PDF):
-        return gen_pdf(
-            rst_content=message.rst_content,
-            style_text=message.style,
-            header=message.header,
-            footer=message.footer
+        return pdf_from_file(
+            gen_pdf(**message._asdict())
         )
 
     raise ValueError(

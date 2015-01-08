@@ -18,7 +18,7 @@ class GenerateContract(namedtuple("GenerateContract", ["firma",
     pass
 
 
-class RST2PDF(namedtuple("RST2PDF", ["rst_source",
+class RST2PDF(namedtuple("RST2PDF", ["rst_content",
                                      "style",
                                      "header",
                                      "footer"])):
