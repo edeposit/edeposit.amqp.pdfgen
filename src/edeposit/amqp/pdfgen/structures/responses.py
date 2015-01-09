@@ -10,6 +10,15 @@ from collections import namedtuple
 
 # Functions & classes =========================================================
 def pdf_from_file(file_obj):
+    """
+    Convert `file_obj` to base64 string.
+
+    Args:
+        file_obj (obj): Opened file like object.
+
+    Returns:
+        str: Base64 encoded string.
+    """
     return PDF(
         b64encode(file_obj.read())
     )
