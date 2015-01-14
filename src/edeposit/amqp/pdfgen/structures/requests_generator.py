@@ -19,7 +19,7 @@ REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
     ["nazev", ["Název ePublikace", True]],
     ["podnazev", ["Podnázev", True]],
     ["cast", ["Část (svazek,díl)", True]],
-    ["nazev_casti", ["Název části, [dílu", True]],
+    ["nazev_casti", ["Název části, dílu", True]],
     ["isbn", ["ISBN (pokud je)", True]],
     ["isbn_souboru_publikaci", [
         "ISBN souboru (pro vícesvazkové dokumenty)",
@@ -68,6 +68,15 @@ if __name__ == '__main__':
         )
     )
 
+    semantic_dict = map(
+        lambda (key, val): '["%s", "%s"],' % (key, val[0]),
+        REVIEW.items()
+    )
+    semantic_dict = "\n            ".join(
+        ["semantic_dict = OrderedDict(["] + semantic_dict
+    )
+    semantic_dict = semantic_dict +  "\n        ])"
+
     content = Template(template).substitute(
         warning_mark=COMMENT_WARNING,
         first_key="'" + all_keys[0] + "'",
@@ -76,7 +85,8 @@ if __name__ == '__main__':
         ),
         required=",\n                ".join(required),
         optionals=",\n                ".join(optional),
-        all_items=",\n            ".join(all_keys)
+        all_items=",\n            ".join(all_keys),
+        semantic_dict=semantic_dict
     )
 
     with open("requests.py", "w") as f:

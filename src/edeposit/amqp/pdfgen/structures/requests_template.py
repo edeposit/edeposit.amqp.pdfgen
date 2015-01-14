@@ -4,7 +4,7 @@
 # Interpreter version: python 2.7
 $warning_mark
 # Imports =====================================================================
-from collections import namedtuple
+from collections import namedtuple, OrderedDict
 
 
 # Functions & classes =========================================================
@@ -42,12 +42,14 @@ class GenerateReview(namedtuple("GenerateReview", [$first_key,
         )
 
     def get_rst(self):
-        rst = ""
-        for key, val in REVIEW.items():
-            val = val.strip()
-            rst += ":%s: %s\n" % (key, val)
+        $semantic_dict
 
-        return rst
+        rst = ""
+        for key, val in semantic_dict.items():
+            val = val.strip()
+            rst += ":%s: %s\n" % (val, key)
+
+        return str(rst)
 $warning_mark
 
 
