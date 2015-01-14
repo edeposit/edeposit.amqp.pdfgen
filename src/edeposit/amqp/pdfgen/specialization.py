@@ -76,6 +76,15 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
 
 
 def get_review(review_struct):
+    """
+    Generate review from `review_struct`.
+
+    Args:
+        review_struct (obj): :class:`.GenerateReview` instance.
+
+    Returns:
+        obj: StringIO file instance containing PDF file.
+    """
     review_fn = _resource_context("review.rst")
 
     with open(review_fn) as f:
