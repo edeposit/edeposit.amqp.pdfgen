@@ -16,20 +16,20 @@ COMMENT_WARNING = """#
 #"""
 
 REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
-    ["nazev", ["Název ePublikace", True]],
+    ["nazev", ["Název", True]],
     ["podnazev", ["Podnázev", True]],
-    ["cast", ["Část (svazek,díl)", True]],
-    ["nazev_casti", ["Název části, dílu", True]],
-    ["isbn", ["ISBN (pokud je)", True]],
+    ["cast", ["Část", True]],
+    ["nazev_casti", ["Název části", True]],
+    ["isbn", ["ISBN", True]],
     ["isbn_souboru_publikaci", [
-        "ISBN souboru (pro vícesvazkové dokumenty)",
+        "ISBN souboru",
         True
     ]],
-    ["generated_isbn", ['Přidělit agenturou ISBN', True]],
+    ["generated_isbn", ['Přidělit ISBN', True]],
     ["author1", ["Autor", False]],
     ["author2", ["Autor 2", False]],
     ["author3", ["Autor 3", False]],
-    ["poradi_vydani", ['Pořadí vydání, verze', True]],
+    ["poradi_vydani", ['Pořadí', True]],
     ["misto_vydani", ['Místo vydání', True]],
     ["rok_vydani", ["Rok vydání", True]],
     ["nakladatel_vydavatel", ["Nakladatel", True]],
@@ -37,13 +37,13 @@ REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
     ["cena", ['Cena v Kč', True]],
     ["offer_to_riv", ['Zpřístupnit pro RIV', True]],
     ["category_for_riv", ["Kategorie pro RIV", True]],
-    ["is_public", ['ePublikace je veřejná', True]],
+    ["is_public", ['Veřejná publikace', True]],
     ["libraries_accessing", ["Oprávnění knihovnám", True]],
-    ["libraries_that_can_access", ["Knihovny s přístupem k ePublikaci", True]],
+    ["libraries_that_can_access", ["Seznam knihoven", True]],
     ["zpracovatel_zaznamu", ['Zpracovatel záznamu', True]],
     ["url", ["URL", True]],
     ["format", ["Formát souboru", True]],
-    ["filename", ["Soubor s ePublikací", True]],
+    ["filename", ["Název souboru", True]],
 ])
 
 

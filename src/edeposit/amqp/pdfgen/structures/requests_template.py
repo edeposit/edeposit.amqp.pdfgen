@@ -33,6 +33,11 @@ class GenerateContract(namedtuple("GenerateContract", ["firma",
 $warning_mark
 class GenerateReview(namedtuple("GenerateReview", [$first_key,
                                                    $other_keys])):
+    """
+    Generate review of sent form.
+
+    Attributes:
+    """
     def __new__(self,
                 $required,
                 $optionals):
@@ -46,8 +51,26 @@ class GenerateReview(namedtuple("GenerateReview", [$first_key,
 
         rst = ""
         for key, val in semantic_dict.items():
+            key = getattr(self, key)
+
+            # human intepretation of python's internal values
+            if isinstance(key, basestring):
+                key = key.encode("utf-8")
+            elif isinstance(key, bool):
+                key = "Ano" if key else "Ne"
+            elif key is None:
+                key = "Nezvoleno"
+            elif isinstance(key, list):
+                tmp = []
+                for item in key:
+                    if "title" in item:
+                        tmp.append(item["title"].encode("utf-8"))
+                    else:
+                        tmp.append(str(item))
+                key = ", ".join(tmp)
+
             val = val.strip()
-            rst += ":%s: %s\n" % (val, key)
+            rst += ":%s: %s\n" % (val, str(key).strip())
 
         return str(rst)
 $warning_mark

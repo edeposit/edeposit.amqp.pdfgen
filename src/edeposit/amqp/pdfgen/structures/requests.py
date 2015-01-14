@@ -64,6 +64,11 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                                                    'url',
                                                    'format',
                                                    'filename'])):
+    """
+    Generate review of sent form.
+
+    Attributes:
+    """
     def __new__(self,
                 nazev,
                 podnazev,
@@ -121,17 +126,17 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
 
     def get_rst(self):
         semantic_dict = OrderedDict([
-            ["nazev", "Název ePublikace"],
+            ["nazev", "Název"],
             ["podnazev", "Podnázev"],
-            ["cast", "Část (svazek,díl)"],
-            ["nazev_casti", "Název části, dílu"],
-            ["isbn", "ISBN (pokud je)"],
-            ["isbn_souboru_publikaci", "ISBN souboru (pro vícesvazkové dokumenty)"],
-            ["generated_isbn", "Přidělit agenturou ISBN"],
+            ["cast", "Část"],
+            ["nazev_casti", "Název části"],
+            ["isbn", "ISBN"],
+            ["isbn_souboru_publikaci", "ISBN souboru"],
+            ["generated_isbn", "Přidělit ISBN"],
             ["author1", "Autor"],
             ["author2", "Autor 2"],
             ["author3", "Autor 3"],
-            ["poradi_vydani", "Pořadí vydání, verze"],
+            ["poradi_vydani", "Pořadí"],
             ["misto_vydani", "Místo vydání"],
             ["rok_vydani", "Rok vydání"],
             ["nakladatel_vydavatel", "Nakladatel"],
@@ -139,19 +144,37 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
             ["cena", "Cena v Kč"],
             ["offer_to_riv", "Zpřístupnit pro RIV"],
             ["category_for_riv", "Kategorie pro RIV"],
-            ["is_public", "ePublikace je veřejná"],
+            ["is_public", "Veřejná publikace"],
             ["libraries_accessing", "Oprávnění knihovnám"],
-            ["libraries_that_can_access", "Knihovny s přístupem k ePublikaci"],
+            ["libraries_that_can_access", "Seznam knihoven"],
             ["zpracovatel_zaznamu", "Zpracovatel záznamu"],
             ["url", "URL"],
             ["format", "Formát souboru"],
-            ["filename", "Soubor s ePublikací"],
+            ["filename", "Název souboru"],
         ])
 
         rst = ""
         for key, val in semantic_dict.items():
+            key = getattr(self, key)
+
+            # human intepretation of python's internal values
+            if isinstance(key, basestring):
+                key = key.encode("utf-8")
+            elif isinstance(key, bool):
+                key = "Ano" if key else "Ne"
+            elif key is None:
+                key = "Nezvoleno"
+            elif isinstance(key, list):
+                tmp = []
+                for item in key:
+                    if "title" in item:
+                        tmp.append(item["title"].encode("utf-8"))
+                    else:
+                        tmp.append(str(item))
+                key = ", ".join(tmp)
+
             val = val.strip()
-            rst += ":%s: %s\n" % (val, key)
+            rst += ":%s: %s\n" % (val, str(key).strip())
 
         return str(rst)
 #
