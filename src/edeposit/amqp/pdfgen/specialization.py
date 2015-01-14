@@ -81,7 +81,7 @@ def get_review(review_struct):
         review = f.read()
 
     review = Template(review).substitute(
-        contract=review_struct.get_rst()
+        content=review_struct.get_rst()
     )
 
     return gen_pdf(
