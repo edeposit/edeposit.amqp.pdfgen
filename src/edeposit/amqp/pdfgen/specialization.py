@@ -4,6 +4,7 @@
 # Interpreter version: python 2.7
 #
 # Imports =====================================================================
+import time
 import os.path
 from string import Template
 
@@ -81,7 +82,9 @@ def get_review(review_struct):
         review = f.read()
 
     review = Template(review).substitute(
-        content=review_struct.get_rst()
+        content=review_struct.get_rst(),
+        datum=time.strftime("%d.%m.%Y", time.localtime()),
+        cas=time.strftime("%H:%M", time.localtime()),
     )
 
     return gen_pdf(
