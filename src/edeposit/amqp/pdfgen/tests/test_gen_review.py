@@ -25,9 +25,7 @@ def test_review():
         example_data = f.read()
         example_dict = json.loads(example_data)
 
-    req = GenerateReview(
-        **example_dict
-    )
+    req = GenerateReview(**example_dict)
 
     with open("review_test.pdf", "wt") as f:
         result = specialization.get_review(req)
