@@ -72,3 +72,19 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
         contract,
         open(_resource_context("style.json")).read(),
     )
+
+
+def get_review(review_struct):
+    review_fn = _resource_context("review.rst")
+
+    with open(review_fn) as f:
+        review = f.read()
+
+    review = Template(review).substitute(
+        contract=review_struct.get_rst()
+    )
+
+    return gen_pdf(
+        review,
+        open(_resource_context("style.json")).read(),
+    )
