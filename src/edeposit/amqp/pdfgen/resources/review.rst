@@ -1,7 +1,7 @@
 Přehled odeslaného formuláře
 ============================
 
-Přehled hodnot z formuláře tak, jak byl odeslán na server $datum v $cas:
+Přehled hodnot z formuláře tak, jak byl odeslán na server Edeposit dne $datum v $cas:
 
 |
 |
