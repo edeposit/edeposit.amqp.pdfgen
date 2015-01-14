@@ -53,6 +53,8 @@ if __name__ == '__main__':
         template = f.read()
 
     all_keys = REVIEW.keys()
+
+    # collect all required key
     required = map(
         lambda (key, val): key,
         filter(
@@ -60,6 +62,8 @@ if __name__ == '__main__':
             REVIEW.items()
         )
     )
+
+    # collect all optional keys and init them to None
     optional = map(
         lambda (key, val): "%s=None" % key,
         filter(
@@ -68,6 +72,7 @@ if __name__ == '__main__':
         )
     )
 
+    # create OrderedDict as key_name: meaning
     semantic_dict = map(
         lambda (key, val): '["%s", "%s"],' % (key, val[0]),
         REVIEW.items()
@@ -77,6 +82,18 @@ if __name__ == '__main__':
     )
     semantic_dict = semantic_dict +  "\n        ])"
 
+    # create help for attributes
+    attributes  = map(
+        lambda (key, val): '%s (any%s): %s' % (
+            key,
+            ", default None" if not val[1] else "",
+            val[0]
+        ),
+        REVIEW.items()
+    )
+    attributes = "\n        ".join(attributes)
+
+    # construct template
     content = Template(template).substitute(
         warning_mark=COMMENT_WARNING,
         first_key="'" + all_keys[0] + "'",
@@ -86,7 +103,8 @@ if __name__ == '__main__':
         required=",\n                ".join(required),
         optionals=",\n                ".join(optional),
         all_items=",\n            ".join(all_keys),
-        semantic_dict=semantic_dict
+        semantic_dict=semantic_dict,
+        attributes=attributes
     )
 
     with open("requests.py", "w") as f:

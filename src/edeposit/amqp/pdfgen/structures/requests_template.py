@@ -37,6 +37,7 @@ class GenerateReview(namedtuple("GenerateReview", [$first_key,
     Generate review of sent form.
 
     Attributes:
+        $attributes
     """
     def __new__(self,
                 $required,

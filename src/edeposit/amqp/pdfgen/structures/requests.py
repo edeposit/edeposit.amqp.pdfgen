@@ -68,6 +68,31 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
     Generate review of sent form.
 
     Attributes:
+        nazev (any): Název
+        podnazev (any): Podnázev
+        cast (any): Část
+        nazev_casti (any): Název části
+        isbn (any): ISBN
+        isbn_souboru_publikaci (any): ISBN souboru
+        generated_isbn (any): Přidělit ISBN
+        author1 (any, default None): Autor
+        author2 (any, default None): Autor 2
+        author3 (any, default None): Autor 3
+        poradi_vydani (any): Pořadí
+        misto_vydani (any): Místo vydání
+        rok_vydani (any): Rok vydání
+        nakladatel_vydavatel (any): Nakladatel
+        vydano_v_koedici_s (any): Vydáno v koedici s
+        cena (any): Cena v Kč
+        offer_to_riv (any): Zpřístupnit pro RIV
+        category_for_riv (any): Kategorie pro RIV
+        is_public (any): Veřejná publikace
+        libraries_accessing (any): Oprávnění knihovnám
+        libraries_that_can_access (any): Seznam knihoven
+        zpracovatel_zaznamu (any): Zpracovatel záznamu
+        url (any): URL
+        format (any): Formát souboru
+        filename (any): Název souboru
     """
     def __new__(self,
                 nazev,
