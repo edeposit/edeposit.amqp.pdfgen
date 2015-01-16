@@ -25,4 +25,10 @@ def pdf_from_file(file_obj):
 
 
 class PDF(namedtuple("PDF", ["b64_content"])):
+    """
+    Response to request containing base64 representation of genrated PDF.
+
+    Attributes:
+        b64_content (str): Base64 string.
+    """
     pass
