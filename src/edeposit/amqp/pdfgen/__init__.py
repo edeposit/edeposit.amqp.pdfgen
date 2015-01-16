@@ -4,9 +4,14 @@
 # Interpreter version: python 2.7
 #
 # Imports =====================================================================
-from structures.requests import GenerateContract, RST2PDF
+from structures.requests import RST2PDF
+from structures.requests import GenerateReview
+from structures.requests import GenerateContract
+
 from structures.responses import pdf_from_file
+
 from translator import gen_pdf
+from specialization import get_review
 from specialization import get_contract
 
 
@@ -35,13 +40,18 @@ def reactToAMQPMessage(message, UUID=None):
         ValueError: if bad type of `message` structure is given.
     """
     if _instanceof(message, GenerateContract):
-        return pdf_from_file(
+        return pdf_from_file(  # TODO: rewrite to decorator
             get_contract(**message._asdict())
         )
     elif _instanceof(message, RST2PDF):
         return pdf_from_file(
             gen_pdf(**message._asdict())
         )
+    elif _instanceof(message, GenerateReview):
+        return pdf_from_file(
+            get_review(message)
+        )
+
 
     raise ValueError(
         "Unknown type of request: '" + str(type(message)) + "'!"
