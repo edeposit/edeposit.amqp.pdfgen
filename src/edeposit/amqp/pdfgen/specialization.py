@@ -90,13 +90,19 @@ def get_review(review_struct):
     with open(review_fn) as f:
         review = f.read()
 
+    res_path = os.path.join(
+        os.path.dirname(__file__),
+        "resources",
+    )
+
     review = Template(review).substitute(
         content=review_struct.get_rst(),
         datum=time.strftime("%d.%m.%Y", time.localtime()),
         cas=time.strftime("%H:%M", time.localtime()),
+        resources_path=res_path,
     )
 
     return gen_pdf(
         review,
-        open(_resource_context("style.json")).read(),
+        open(_resource_context("review_style.json")).read(),
     )
