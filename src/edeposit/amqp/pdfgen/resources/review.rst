@@ -1,15 +1,16 @@
-Přehled odeslaného formuláře
-============================
+Výpis odeslaného formuláře
+==========================
 
-Přehled hodnot z formuláře tak, jak byl odeslán na server Edeposit dne $datum v $cas:
+.. header::
+    .. image:: $resources_path/header_logo.png
 
-|
+Přehled hodnot z formuláře tak, jak byl odeslán na server `e-deposit <http://edeposit.nkp.cz>`_ dne $datum v $cas:
+
 |
 
 $content
 
 
-|
 |
 |
 |
