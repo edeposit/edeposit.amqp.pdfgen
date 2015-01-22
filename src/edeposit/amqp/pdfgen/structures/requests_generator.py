@@ -49,7 +49,7 @@ REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
 
 # Main program ================================================================
 if __name__ == '__main__':
-    with open("requests_template.py") as f:
+    with open("requests_template.txt") as f:
         template = f.read()
 
     all_keys = REVIEW.keys()
