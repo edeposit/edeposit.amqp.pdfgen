@@ -56,7 +56,7 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
 
     # make sure that `firma` has its heading mark
     firma = firma.strip()
-    firma = firma + ":\n" + (len(firma) * "-")
+    firma = firma + ":\n" + ((len(firma) + 1) * "-")
 
     # patch template
     contract = Template(contract).substitute(
