@@ -76,9 +76,9 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
         isbn (any): ISBN
         isbn_souboru_publikaci (any): ISBN souboru
         generated_isbn (any): Přidělit ISBN
-        author1 (any, default None): Autor
-        author2 (any, default None): Autor 2
-        author3 (any, default None): Autor 3
+        author1 (any): Autor
+        author2 (any): Autor 2
+        author3 (any): Autor 3
         poradi_vydani (any): Pořadí
         misto_vydani (any): Místo vydání
         rok_vydani (any): Rok vydání
@@ -96,64 +96,8 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
         filename (any): Název souboru
         internal_url (any): Edeposit URL
     """
-    def __new__(self,
-                nazev,
-                podnazev,
-                cast,
-                nazev_casti,
-                isbn,
-                isbn_souboru_publikaci,
-                generated_isbn,
-                poradi_vydani,
-                misto_vydani,
-                rok_vydani,
-                nakladatel_vydavatel,
-                vydano_v_koedici_s,
-                cena,
-                offer_to_riv,
-                category_for_riv,
-                is_public,
-                libraries_accessing,
-                libraries_that_can_access,
-                zpracovatel_zaznamu,
-                url,
-                format,
-                filename,
-                internal_url,
-                author1=None,
-                author2=None,
-                author3=None):
-        return super(GenerateReview, self).__new__(
-            self,
-            nazev,
-            podnazev,
-            cast,
-            nazev_casti,
-            isbn,
-            isbn_souboru_publikaci,
-            generated_isbn,
-            author1,
-            author2,
-            author3,
-            poradi_vydani,
-            misto_vydani,
-            rok_vydani,
-            nakladatel_vydavatel,
-            vydano_v_koedici_s,
-            cena,
-            offer_to_riv,
-            category_for_riv,
-            is_public,
-            libraries_accessing,
-            libraries_that_can_access,
-            zpracovatel_zaznamu,
-            url,
-            format,
-            filename,
-            internal_url
-        )
-
     def get_rst(self):
+        # this is used to maintain order of informations
         semantic_dict = OrderedDict([
             ["nazev", "Název"],
             ["podnazev", "Podnázev"],

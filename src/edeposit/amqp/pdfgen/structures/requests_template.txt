@@ -39,15 +39,8 @@ class GenerateReview(namedtuple("GenerateReview", [$first_key,
     Attributes:
         $attributes
     """
-    def __new__(self,
-                $required,
-                $optionals):
-        return super(GenerateReview, self).__new__(
-            self,
-            $all_items
-        )
-
     def get_rst(self):
+        # this is used to maintain order of informations
         $semantic_dict
 
         rst = ""

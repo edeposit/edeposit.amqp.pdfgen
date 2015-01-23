@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.2.3
+-----
+    - Removed default arguments in GenerateReview structure.
+
 0.2.2
 -----
     - Added internal_url field.
