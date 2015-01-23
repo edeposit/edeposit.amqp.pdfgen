@@ -4,6 +4,7 @@ Changelog
 0.2.2
 -----
     - Added internal_url field.
+    - review_example.pdf is now saved to test directory. This is useful for showing the review to other people.
 
 0.2.1
 -----

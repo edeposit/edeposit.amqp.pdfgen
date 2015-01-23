@@ -20,6 +20,10 @@ def test_review():
         os.path.dirname(__file__),
         "example_metadata.json"
     )
+    out_fn = os.path.join(
+        os.path.dirname(__file__),
+        "review_example.pdf"
+    )
 
     with open(example_fn) as f:
         example_data = f.read()
@@ -27,7 +31,7 @@ def test_review():
 
     req = GenerateReview(**example_dict)
 
-    with open("review_test.pdf", "wt") as f:
+    with open(out_fn, "wb") as f:
         result = specialization.get_review(req)
         result.seek(0)
 
