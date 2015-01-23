@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.2.2
+-----
+    - Added internal_url field.
+
 0.2.1
 -----
     - requests_template.py renamed to requests_template.txt.

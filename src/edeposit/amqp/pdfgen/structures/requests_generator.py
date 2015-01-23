@@ -44,6 +44,7 @@ REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
     ["url", ["URL", True]],
     ["format", ["Formát souboru", True]],
     ["filename", ["Název souboru", True]],
+    ["internal_url", ["Edeposit URL", True]],
 ])
 
 

@@ -63,7 +63,8 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                                                    'zpracovatel_zaznamu',
                                                    'url',
                                                    'format',
-                                                   'filename'])):
+                                                   'filename',
+                                                   'internal_url'])):
     """
     Generate review of sent form.
 
@@ -93,6 +94,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
         url (any): URL
         format (any): Formát souboru
         filename (any): Název souboru
+        internal_url (any): Edeposit URL
     """
     def __new__(self,
                 nazev,
@@ -117,6 +119,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                 url,
                 format,
                 filename,
+                internal_url,
                 author1=None,
                 author2=None,
                 author3=None):
@@ -146,7 +149,8 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
             zpracovatel_zaznamu,
             url,
             format,
-            filename
+            filename,
+            internal_url
         )
 
     def get_rst(self):
@@ -176,6 +180,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
             ["url", "URL"],
             ["format", "Formát souboru"],
             ["filename", "Název souboru"],
+            ["internal_url", "Edeposit URL"],
         ])
 
         rst = ""
