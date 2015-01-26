@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.2.4
+-----
+    - Added experimental utf-8 skip.
+
 0.2.3
 -----
     - Removed default arguments in GenerateReview structure.

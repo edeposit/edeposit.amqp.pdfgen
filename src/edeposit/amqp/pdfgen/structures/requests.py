@@ -133,7 +133,10 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
 
             # human intepretation of python's internal values
             if isinstance(key, basestring):
-                key = key.encode("utf-8")
+                try:
+                    key = key.encode("utf-8")
+                except UnicodeDecodeError:
+                    pass
             elif isinstance(key, bool):
                 key = "Ano" if key else "Ne"
             elif key is None:
@@ -142,7 +145,10 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                 tmp = []
                 for item in key:
                     if "title" in item:
-                        tmp.append(item["title"].encode("utf-8"))
+                        try:
+                            tmp.append(item["title"].encode("utf-8"))
+                        except UnicodeDecodeError:
+                            tmp.append(item["title"])
                     else:
                         tmp.append(str(item))
                 key = ", ".join(tmp)
