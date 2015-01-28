@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.3.0
+-----
+    - Added support for QR code.
+    - Added logo into contract template.
+    - Small improvements of templates.
+
 0.2.4
 -----
     - Added experimental utf-8 skip.
