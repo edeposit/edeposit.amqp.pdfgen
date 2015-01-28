@@ -74,4 +74,7 @@ def test_get_contract():
 
 
 def teardown_module():
+    # os.system(
+    #     "cp %s %s" % (FILENAME, os.path.dirname(__file__) + "/example.pdf")
+    # )
     os.unlink(FILENAME)

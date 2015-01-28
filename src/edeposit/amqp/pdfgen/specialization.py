@@ -11,6 +11,14 @@ from string import Template
 from translator import gen_pdf
 
 
+# Variables ===================================================================
+DES_DIR = "resources"
+RES_PATH = os.path.join(
+    os.path.dirname(__file__),
+    DES_DIR,
+)
+
+
 # Functions & classes =========================================================
 def _resource_context(fn):
     """
@@ -24,7 +32,7 @@ def _resource_context(fn):
     """
     return os.path.join(
         os.path.dirname(__file__),
-        "resources",
+        DES_DIR,
         fn
     )
 
@@ -67,6 +75,7 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
         dic=dic.strip(),
         zastoupen=zastoupen.strip(),
         jednajici=jednajici.strip(),
+        resources_path=RES_PATH
     )
 
     return gen_pdf(
@@ -90,19 +99,14 @@ def get_review(review_struct):
     with open(review_fn) as f:
         review = f.read()
 
-    res_path = os.path.join(
-        os.path.dirname(__file__),
-        "resources",
-    )
-
     review = Template(review).substitute(
         content=review_struct.get_rst(),
         datum=time.strftime("%d.%m.%Y", time.localtime()),
         cas=time.strftime("%H:%M", time.localtime()),
-        resources_path=res_path,
+        resources_path=RES_PATH,
     )
 
     return gen_pdf(
         review,
-        open(_resource_context("review_style.json")).read(),
+        open(_resource_context("style.json")).read(),
     )

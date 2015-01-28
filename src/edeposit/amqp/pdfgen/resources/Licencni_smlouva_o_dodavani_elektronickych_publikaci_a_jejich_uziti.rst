@@ -3,6 +3,9 @@ Licenční smlouva
 o dodávání elektronických publikací a jejich užití
 ==================================================
 
+.. header::
+    .. image:: $resources_path/header_logo.png
+
 Smluvní strany:
 ---------------
 
@@ -74,6 +77,10 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 
 #. Knihovna prohlašuje, že bude při nakládání s e-publikacemi postupovat v souladu s touto smlouvou, právními předpisy, poctivě a v dobré víře, v souladu s dobrými mravy.
 
+.. raw:: pdf
+
+    PageBreak
+
 Článek 2 - Práva a povinnosti Producenta
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -107,6 +114,10 @@ b) umožnit užití e-publikací v rozsahu a způsobem určeným Producentem př
 c) nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uvedeným,
 
 d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
+
+.. raw:: pdf
+
+    PageBreak
 
 Článek 4 Další ujednání, způsob dodávání e-publikací Knihovně
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -174,8 +185,6 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 |
 |
 | V Praze dne                                                                              V . . . . . . . . . . . . . . . . . . . dne . . . . . . . . . . . . . . . . . . . .
-|
-|
 |
 |
 | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                          . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
