@@ -7,6 +7,9 @@
 import time
 import os.path
 from string import Template
+from tempfile import NamedTemporaryFile
+
+import pyqrcode
 
 from translator import gen_pdf
 
@@ -96,17 +99,29 @@ def get_review(review_struct):
     """
     review_fn = _resource_context("review.rst")
 
+    # read review template
     with open(review_fn) as f:
         review = f.read()
 
-    review = Template(review).substitute(
-        content=review_struct.get_rst(),
-        datum=time.strftime("%d.%m.%Y", time.localtime()),
-        cas=time.strftime("%H:%M", time.localtime()),
-        resources_path=RES_PATH,
-    )
+    # generate qr code
+    with NamedTemporaryFile(suffix=".png") as qr_file:
+        url = pyqrcode.create(review_struct.internal_url)
+        url.png(qr_file.name, scale=7)
 
-    return gen_pdf(
-        review,
-        open(_resource_context("style.json")).read(),
-    )
+        # save the file
+        qr_file.flush()
+        qr_file.seek(0)
+
+        # generate template
+        review = Template(review).substitute(
+            content=review_struct.get_rst(),
+            datum=time.strftime("%d.%m.%Y", time.localtime()),
+            cas=time.strftime("%H:%M", time.localtime()),
+            resources_path=RES_PATH,
+            qr_path=qr_file.name,
+        )
+
+        return gen_pdf(
+            review,
+            open(_resource_context("review_style.json")).read(),
+        )

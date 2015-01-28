@@ -51,6 +51,8 @@ setup(
     install_requires=[
         'setuptools',
         "rst2pdf",
+        "pyqrcode",
+        "pypng",
     ],
     extras_require={
         "test": [
