@@ -40,7 +40,7 @@ def _resource_context(fn):
     )
 
 
-def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
+def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen):
     """
     Compose contract and create PDF.
 
@@ -51,7 +51,6 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
         ic (str): ic
         dic (str): dic
         zastoupen (str): zastoupen
-        jednajici (str): jednajici
 
     Returns:
         obj: StringIO file instance containing PDF file.
@@ -63,7 +62,7 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
 
     # load contract
     with open(contract_fn) as f:
-        contract = f.read()
+        contract = f.read()#.decode("utf-8").encode("utf-8")
 
     # make sure that `firma` has its heading mark
     firma = firma.strip()
@@ -77,7 +76,6 @@ def get_contract(firma, pravni_forma, sidlo, ic, dic, zastoupen, jednajici):
         ic=ic.strip(),
         dic=dic.strip(),
         zastoupen=zastoupen.strip(),
-        jednajici=jednajici.strip(),
         resources_path=RES_PATH
     )
 

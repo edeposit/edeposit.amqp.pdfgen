@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.1
+-----
+    - "jednajici" removed from contract.
+
 0.3.0
 -----
     - Added support for QR code.

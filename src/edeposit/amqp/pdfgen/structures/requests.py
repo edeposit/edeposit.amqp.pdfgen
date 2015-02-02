@@ -17,8 +17,7 @@ class GenerateContract(namedtuple("GenerateContract", ["firma",
                                                        "sidlo",
                                                        "ic",
                                                        "dic",
-                                                       "zastoupen",
-                                                       "jednajici"])):
+                                                       "zastoupen"])):
     """
     Request to generate contract.
 
@@ -29,7 +28,6 @@ class GenerateContract(namedtuple("GenerateContract", ["firma",
         ic (str): As it is defined in contract.
         dic (str): As it is defined in contract.
         zastoupen (str): As it is defined in contract.
-        jednajici (str): As it is defined in contract.
     """
     pass
 

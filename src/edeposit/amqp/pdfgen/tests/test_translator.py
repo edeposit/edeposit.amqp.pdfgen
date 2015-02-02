@@ -56,7 +56,6 @@ def test_get_contract():
         "27827272",
         "73646723",
         "Ne",
-        "Nekdo"
     )
 
     with NamedTemporaryFile(delete=False) as f:

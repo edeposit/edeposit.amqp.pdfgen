@@ -28,7 +28,6 @@ $firma
 :IČ: $ic
 :DIČ: $dic
 :Zastoupen: $zastoupen
-:Jednající: $jednajici
 
 dále jako **„Producent“**
 
