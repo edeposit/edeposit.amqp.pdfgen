@@ -6,7 +6,6 @@
 # Imports =====================================================================
 import os
 import os.path
-import filecmp
 from StringIO import StringIO
 from tempfile import NamedTemporaryFile
 
@@ -15,7 +14,7 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.converter import TextConverter
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 
-import specialization
+from pdfgen import specialization
 
 
 # Variables ===================================================================

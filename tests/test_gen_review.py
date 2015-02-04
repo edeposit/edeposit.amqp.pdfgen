@@ -6,12 +6,9 @@
 # Imports =====================================================================
 import os
 import json
-import specialization
-from structures.requests import GenerateReview
 
-
-# Variables ===================================================================
-
+from pdfgen import specialization
+from pdfgen.structures.requests import GenerateReview
 
 
 # Functions & classes =========================================================

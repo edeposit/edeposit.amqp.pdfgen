@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
+#
+PYTHONPATH="$PYTHONPATH:src/edeposit/amqp"
 
-PYTHONPATH="$PYTHONPATH:src/edeposit/amqp/pdfgen"
-
-py.test "src/edeposit/amqp/pdfgen/tests" -vv
+py.test tests 
