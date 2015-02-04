@@ -186,7 +186,6 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 | V Praze dne                                                                              V . . . . . . . . . . . . . . . . . . . dne . . . . . . . . . . . . . . . . . . . .
 |
 |
-|
 |           . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 |
 |
