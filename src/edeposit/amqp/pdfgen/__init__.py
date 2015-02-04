@@ -27,14 +27,13 @@ def reactToAMQPMessage(message, UUID=None):
     :py:func:`collections.namedtuple` structure filled with all necessary data.
 
     Args:
-        message (\*Request class): only :class:`.ConversionRequest` class is
-                                   supported right now
+        message (\*Request class): One of the structures defined in
+                :mod:`.requests`.
 
-        UUID (str):                unique ID of received message
+        UUID (str): Unique ID of received message.
 
     Returns:
-        ConversionResponse: response filled with data about conversion and\
-                            converted file.
+        obj: One of the responses in :mod:`.responses`.
 
     Raises:
         ValueError: if bad type of `message` structure is given.
@@ -51,7 +50,6 @@ def reactToAMQPMessage(message, UUID=None):
         return pdf_from_file(
             get_review(message)
         )
-
 
     raise ValueError(
         "Unknown type of request: '" + str(type(message)) + "'!"

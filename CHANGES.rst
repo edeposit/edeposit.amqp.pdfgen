@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.3
+-----
+    - Documentation of ``reactToAMQPMessage()`` updated.
+
 0.3.2
 -----
     - Added installation notes specific to Suse systems.
