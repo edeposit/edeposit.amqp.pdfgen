@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.3.2
+-----
+    - Added installation notes specific to Suse systems.
+    - Fixed bugs specific to OpenSuse.
+    - Tests moved to the root of the package.
+
 0.3.1
 -----
     - "jednajici" removed from contract.
