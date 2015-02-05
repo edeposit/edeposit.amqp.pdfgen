@@ -4,6 +4,7 @@ Changelog
 0.3.3
 -----
     - Documentation of ``reactToAMQPMessage()`` updated.
+    - Formating of the contract updated.
 
 0.3.2
 -----
