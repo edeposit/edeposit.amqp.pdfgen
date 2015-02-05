@@ -121,5 +121,5 @@ def get_review(review_struct):
 
         return gen_pdf(
             review,
-            open(_resource_context("review_style.json")).read(),
+            open(_resource_context("style.json")).read(),
         )

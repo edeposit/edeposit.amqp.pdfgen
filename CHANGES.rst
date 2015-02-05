@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.5
+-----
+    - Formating of the contract updated - for the last time I hope.
+
 0.3.4
 -----
     - ``reactToAMQPMessage()`` parameters modified.

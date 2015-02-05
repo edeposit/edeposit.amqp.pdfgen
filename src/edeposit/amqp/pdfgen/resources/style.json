@@ -25,5 +25,9 @@
             "spaceAfter": 10,
             "fontSize": 13
         }
+    },
+    "pageSetup": {
+        "margin-top": "1cm",
+        "margin-bottom": "1cm"
     }
 }

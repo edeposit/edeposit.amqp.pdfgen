@@ -76,10 +76,6 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 
 #. Knihovna prohlašuje, že bude při nakládání s e-publikacemi postupovat v souladu s touto smlouvou, právními předpisy, poctivě a v dobré víře, v souladu s dobrými mravy.
 
-.. raw:: pdf
-
-    PageBreak
-
 Článek 2 - Práva a povinnosti Producenta
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -114,10 +110,6 @@ c) nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uve
 
 d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
 
-.. raw:: pdf
-
-    PageBreak
-
 Článek 4 Další ujednání, způsob dodávání e-publikací Knihovně
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -130,6 +122,10 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Producent bere na vědomí, že Knihovna není schopna při procesech dlouhodobé archivace (migrace, emulace, převod na jiná média apod.) vždy zajistit zachování úplné podoby (formy) archivovaných e-publikací. Tyto případy neznamenají porušení této smlouvy ze strany Knihovny ani porušení práv duševního vlastnictví a práv osobnostních.
 
 #. Knihovna není povinna převzít od Producenta rozmnoženinu e-publikace, která nebude splňovat podmínky a technické parametry sjednané v této smlouvě. Knihovna není povinna zpřístupňovat uživatelům e-publikace poskytnuté dle této smlouvy. Knihovna není povinna licenci užívat.
+
+.. raw:: pdf
+
+    PageBreak
 
 Článek 5 - Další práva a povinnosti smluvních stran
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
