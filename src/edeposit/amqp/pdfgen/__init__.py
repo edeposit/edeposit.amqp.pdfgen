@@ -21,7 +21,7 @@ def _instanceof(instance, class_):
     return type(instance).__name__ == class_.__name__
 
 
-def reactToAMQPMessage(message, UUID=None):
+def reactToAMQPMessage(message, sender):
     """
     React to given (AMQP) message. `message` is usually expected to be
     :py:func:`collections.namedtuple` structure filled with all necessary data.
@@ -29,8 +29,10 @@ def reactToAMQPMessage(message, UUID=None):
     Args:
         message (\*Request class): One of the structures defined in
                 :mod:`.requests`.
-
-        UUID (str): Unique ID of received message.
+        sender (fn reference): Reference to function for responding - progress
+               monitoring for example. Function takes one parameter, which
+               may be response namedtuple, or string or whatever would be
+               normally returned.
 
     Returns:
         obj: One of the responses in :mod:`.responses`.

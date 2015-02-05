@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.3.4
+-----
+    - ``reactToAMQPMessage()`` parameters modified.
+
 0.3.3
 -----
     - Documentation of ``reactToAMQPMessage()`` updated.
