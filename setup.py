@@ -1,15 +1,10 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
-# Ubuntu packages: clamav clamav-daemon
-# Suse packages: clamav
-
-import os
-import os.path
-import shutil
-
+#
+# Interpreter version: python 2.7
+#
+# Imports =====================================================================
 from setuptools import setup, find_packages
-from distutils.command.sdist import sdist
-from distutils.filelist import FileList
 
 from docs import getVersion
 
