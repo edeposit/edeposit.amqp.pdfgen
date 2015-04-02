@@ -53,13 +53,13 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                                                    'nakladatel_vydavatel',
                                                    'vydano_v_koedici_s',
                                                    'cena',
-                                                   'offer_to_riv',
-                                                   'category_for_riv',
-                                                   'is_public',
                                                    'libraries_accessing',
                                                    'libraries_that_can_access',
-                                                   'zpracovatel_zaznamu',
+                                                   'is_public',
                                                    'url',
+                                                   'offer_to_riv',
+                                                   'category_for_riv',
+                                                   'zpracovatel_zaznamu',
                                                    'format',
                                                    'filename',
                                                    'internal_url'])):
@@ -67,29 +67,29 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
     Generate review of sent form.
 
     Attributes:
-        nazev (any): Název
+        nazev (any): Název ePublikace
         podnazev (any): Podnázev
-        cast (any): Část
-        nazev_casti (any): Název části
+        cast (any): Část (svazek,díl)
+        nazev_casti (any): Název části, dílu
         isbn (any): ISBN
         isbn_souboru_publikaci (any): ISBN souboru
         generated_isbn (any): Přidělit ISBN
         author1 (any): Autor
         author2 (any): Autor 2
         author3 (any): Autor 3
-        poradi_vydani (any): Pořadí
+        poradi_vydani (any): Pořadí vydání, verze
         misto_vydani (any): Místo vydání
         rok_vydani (any): Rok vydání
         nakladatel_vydavatel (any): Nakladatel
         vydano_v_koedici_s (any): Vydáno v koedici s
         cena (any): Cena v Kč
-        offer_to_riv (any): Zpřístupnit pro RIV
-        category_for_riv (any): Kategorie pro RIV
-        is_public (any): Veřejná publikace
         libraries_accessing (any): Oprávnění knihovnám
         libraries_that_can_access (any): Seznam knihoven
-        zpracovatel_zaznamu (any): Zpracovatel záznamu
+        is_public (any): Vystavení na volném internetu
         url (any): URL
+        offer_to_riv (any): Zpřístupnit pro RIV
+        category_for_riv (any): Seznam oborů pro RIV
+        zpracovatel_zaznamu (any): Zpracovatel záznamu
         format (any): Formát souboru
         filename (any): Název souboru
         internal_url (any): Edeposit URL
@@ -97,29 +97,29 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
     def get_rst(self):
         # this is used to maintain order of informations
         semantic_dict = OrderedDict([
-            ["nazev", "Název"],
+            ["nazev", "Název ePublikace"],
             ["podnazev", "Podnázev"],
-            ["cast", "Část"],
-            ["nazev_casti", "Název části"],
+            ["cast", "Část (svazek,díl)"],
+            ["nazev_casti", "Název části, dílu"],
             ["isbn", "ISBN"],
             ["isbn_souboru_publikaci", "ISBN souboru"],
             ["generated_isbn", "Přidělit ISBN"],
             ["author1", "Autor"],
             ["author2", "Autor 2"],
             ["author3", "Autor 3"],
-            ["poradi_vydani", "Pořadí"],
+            ["poradi_vydani", "Pořadí vydání, verze"],
             ["misto_vydani", "Místo vydání"],
             ["rok_vydani", "Rok vydání"],
             ["nakladatel_vydavatel", "Nakladatel"],
             ["vydano_v_koedici_s", "Vydáno v koedici s"],
             ["cena", "Cena v Kč"],
-            ["offer_to_riv", "Zpřístupnit pro RIV"],
-            ["category_for_riv", "Kategorie pro RIV"],
-            ["is_public", "Veřejná publikace"],
             ["libraries_accessing", "Oprávnění knihovnám"],
             ["libraries_that_can_access", "Seznam knihoven"],
-            ["zpracovatel_zaznamu", "Zpracovatel záznamu"],
+            ["is_public", "Vystavení na volném internetu"],
             ["url", "URL"],
+            ["offer_to_riv", "Zpřístupnit pro RIV"],
+            ["category_for_riv", "Seznam oborů pro RIV"],
+            ["zpracovatel_zaznamu", "Zpracovatel záznamu"],
             ["format", "Formát souboru"],
             ["filename", "Název souboru"],
             ["internal_url", "Edeposit URL"],
@@ -127,21 +127,21 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
 
         rst = ""
         for key, val in semantic_dict.items():
-            key = getattr(self, key)
+            literal_key = getattr(self, key)
 
             # human intepretation of python's internal values
-            if isinstance(key, basestring):
+            if isinstance(literal_key, basestring):
                 try:
-                    key = key.encode("utf-8")
+                    literal_key = literal_key.encode("utf-8")
                 except UnicodeDecodeError:
                     pass
-            elif isinstance(key, bool):
-                key = "Ano" if key else "Ne"
-            elif key is None:
-                key = "Nezvoleno"
-            elif isinstance(key, list):
+            elif isinstance(literal_key, bool):
+                literal_key = "Ano" if literal_key else "Ne"
+            elif literal_key is None:
+                literal_key = "Nezvoleno"
+            elif isinstance(literal_key, list):
                 tmp = []
-                for item in key:
+                for item in literal_key:
                     if "title" in item:
                         try:
                             tmp.append(item["title"].encode("utf-8"))
@@ -149,12 +149,27 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                             tmp.append(item["title"])
                     else:
                         tmp.append(str(item))
-                key = ", ".join(tmp)
+                literal_key = ", ".join(tmp)
 
             val = val.strip()
-            rst += ":%s: %s\n" % (val, str(key).strip())
+            literal_key = str(literal_key).strip()
+
+            if key not in ["url", "internal_url"]:
+                literal_key = self.escape_rst_sequences(literal_key)
+
+            rst += ":%s: %s\n" % (val, literal_key)
 
         return str(rst)
+
+    def escape_rst_sequences(self, s):
+        out = ""
+        for char in s:
+            if ord(char) < 128 and char not in [" ", "\t", "\n"]:
+                out += "\\"
+
+            out += char
+
+        return out
 #
 # !!! DO NOT EDIT THIS FILE!!!
 # !!! THIS IS AUTOMATICALLY GENERATED FILE !!!

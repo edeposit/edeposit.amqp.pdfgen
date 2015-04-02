@@ -43,21 +43,21 @@ class GenerateReview(namedtuple("GenerateReview", [$first_key,
 
         rst = ""
         for key, val in semantic_dict.items():
-            key = getattr(self, key)
+            literal_key = getattr(self, key)
 
             # human intepretation of python's internal values
-            if isinstance(key, basestring):
+            if isinstance(literal_key, basestring):
                 try:
-                    key = key.encode("utf-8")
+                    literal_key = literal_key.encode("utf-8")
                 except UnicodeDecodeError:
                     pass
-            elif isinstance(key, bool):
-                key = "Ano" if key else "Ne"
-            elif key is None:
-                key = "Nezvoleno"
-            elif isinstance(key, list):
+            elif isinstance(literal_key, bool):
+                literal_key = "Ano" if literal_key else "Ne"
+            elif literal_key is None:
+                literal_key = "Nezvoleno"
+            elif isinstance(literal_key, list):
                 tmp = []
-                for item in key:
+                for item in literal_key:
                     if "title" in item:
                         try:
                             tmp.append(item["title"].encode("utf-8"))
@@ -65,12 +65,27 @@ class GenerateReview(namedtuple("GenerateReview", [$first_key,
                             tmp.append(item["title"])
                     else:
                         tmp.append(str(item))
-                key = ", ".join(tmp)
+                literal_key = ", ".join(tmp)
 
             val = val.strip()
-            rst += ":%s: %s\n" % (val, str(key).strip())
+            literal_key = str(literal_key).strip()
+
+            if key not in ["url", "internal_url"]:
+                literal_key = self.escape_rst_sequences(literal_key)
+
+            rst += ":%s: %s\n" % (val, literal_key)
 
         return str(rst)
+
+    def escape_rst_sequences(self, s):
+        out = ""
+        for char in s:
+            if ord(char) < 128 and char not in [" ", "\t", "\n"]:
+                out += "\\"
+
+            out += char
+
+        return out
 $warning_mark
 
 
