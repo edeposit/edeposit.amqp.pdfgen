@@ -16,29 +16,33 @@ COMMENT_WARNING = """#
 #"""
 
 REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
-    ["nazev", "Název"],
+    ["nazev", "Název ePublikace"],
     ["podnazev", "Podnázev"],
-    ["cast", "Část"],
-    ["nazev_casti", "Název části"],
+    ["cast", "Část (svazek,díl)"],
+    ["nazev_casti", "Název části, dílu"],
     ["isbn", "ISBN"],
     ["isbn_souboru_publikaci", "ISBN souboru"],
     ["generated_isbn", 'Přidělit ISBN'],
     ["author1", "Autor"],
     ["author2", "Autor 2"],
     ["author3", "Autor 3"],
-    ["poradi_vydani", 'Pořadí'],
+    ["poradi_vydani", 'Pořadí vydání, verze'],
     ["misto_vydani", 'Místo vydání'],
     ["rok_vydani", "Rok vydání"],
     ["nakladatel_vydavatel", "Nakladatel"],
     ["vydano_v_koedici_s", 'Vydáno v koedici s'],
     ["cena", 'Cena v Kč'],
-    ["offer_to_riv", 'Zpřístupnit pro RIV'],
-    ["category_for_riv", "Kategorie pro RIV"],
-    ["is_public", 'Veřejná publikace'],
+
     ["libraries_accessing", "Oprávnění knihovnám"],
     ["libraries_that_can_access", "Seznam knihoven"],
-    ["zpracovatel_zaznamu", 'Zpracovatel záznamu'],
+
+    ["is_public", 'Vystavení na volném internetu'],
     ["url", "URL"],
+
+    ["offer_to_riv", 'Zpřístupnit pro RIV'],
+    ["category_for_riv", "Seznam oborů pro RIV"],
+
+    ["zpracovatel_zaznamu", 'Zpracovatel záznamu'],
     ["format", "Formát souboru"],
     ["filename", "Název souboru"],
     ["internal_url", "Edeposit URL"],
