@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
 #
-export PYTHONPATH="$PYTHONPATH:src/edeposit/amqp"
+PYTHONPATH="src/edeposit/amqp:$PYTHONPATH"
 
-py.test tests 
+py.test tests
