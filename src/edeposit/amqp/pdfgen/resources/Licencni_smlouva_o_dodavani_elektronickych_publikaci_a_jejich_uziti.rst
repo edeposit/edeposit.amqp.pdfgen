@@ -177,7 +177,7 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 #. Tuto smlouvu lze měnit a doplňovat písemnými dodatky.
 
-#. Smlouva je vyhotovena ve čtyřech stejnopisech, z nichž Knihovna obdrží dva stejnopisy a „Producent“ dva stejnopisy.
+#. Smlouva je vyhotovena ve čtyřech stejnopisech, z nichž Knihovna obdrží dva stejnopisy a Producent dva stejnopisy.
 
 #. Obě smluvní strany potvrzují autentičnost této smlouvy a prohlašují, že si smlouvu přečetly, jejímu obsahu rozumí.
 

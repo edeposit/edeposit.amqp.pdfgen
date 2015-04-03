@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.4.3
+-----
+    - Another small bugfix.
+
 0.4.2
 -----
     - Small bugfix of contract text.
