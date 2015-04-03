@@ -61,7 +61,7 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 
 #. Publikace vydané tiskem a současně zveřejněné elektronicky, a dále publikace zveřejněné pouze elektronicky (bez současného pořízení/vydání tiskem) nemusí mít přidělené číslo ISBN.
 
-#. Producent uděluje Knihovně licenci k užití poskytnutých e-publikací v rozsahu:
+#. Producent uděluje Knihovně licenci s užitím poskytnutých e-publikací v rozsahu:
 
    a) přijetí a zaevidování e-publikací do knihovního fondu Knihovny, a to i pro dobu po ukončení této smlouvy,
    b) zpracování (úprava) e-publikací za účelem jejich dlouhodobé bezpečné archivace k zajištění trvalé udržitelnosti digitálních dat; určovat vhodné formáty pro dlouhodobou ochranu e-publikací a obsahových informací v použitelné podobě, a to i pro dobu po ukončení této smlouvy,
@@ -115,7 +115,7 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
     PageBreak
 
 Článek 4 - Další ujednání, způsob dodávání e-publikací Knihovně
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. E-publikace dodá Producent Knihovně bez zbytečného odkladu od jejich zveřejnění.
 
