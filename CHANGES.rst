@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.4.1
+-----
+    - Updated text of the contract.
+
 0.4.0
 -----
     - Update of the descriptors in the requests generator.

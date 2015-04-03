@@ -16,7 +16,7 @@ státní příspěvková organizace zřízená MK ČR
 :Sídlo: Klementinum 190, 110 00 Praha 1
 :IČ: 00023221
 :DIČ: CZ00023221
-:Statutární orgán: Ing. Tomáš Böhm, generální ředitel
+:Statutární orgán: Mgr. Miroslav Rovenský, pověřený řízením NK ČR
 
 dále jen **„Knihovna“**
 
@@ -66,7 +66,7 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
    a) přijetí a zaevidování e-publikací do knihovního fondu Knihovny, a to i pro dobu po ukončení této smlouvy,
    b) zpracování (úprava) e-publikací za účelem jejich dlouhodobé bezpečné archivace k zajištění trvalé udržitelnosti digitálních dat; určovat vhodné formáty pro dlouhodobou ochranu e-publikací a obsahových informací v použitelné podobě, a to i pro dobu po ukončení této smlouvy,
 
-#. Konkrétní rozsah práva užití každí dodané e-publikace určí Producent při dodání e-publikace, a to zpravidla formou on-line interaktivního formuláře.
+#. Konkrétní rozsah práva užití každé dodané e-publikace určí Producent při dodání e-publikace, a to zpravidla formou on-line interaktivního formuláře.
 
 #. Licenci poskytuje Producent jako nevýhradní, bezúplatnou a na dobu trvání práv Producenta ke zveřejněné elektronické publikaci. Územní rozsah licence je omezen na území České republiky.
 
@@ -110,12 +110,16 @@ c) nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uve
 
 d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
 
-Článek 4 Další ujednání, způsob dodávání e-publikací Knihovně
+.. raw:: pdf
+
+    PageBreak
+
+Článek 4 - Další ujednání, způsob dodávání e-publikací Knihovně
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. E-publikace dodá Producent Knihovně bez zbytečného odkladu od jejich zveřejnění.
 
-#. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Depozit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz“.
+#. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Deposit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz“.
 
 #. Pokud bude dodaná rozmnoženina e-publikace vadná, požádá Knihovna Producenta o dodání bezvadné rozmnoženiny e-publikace.
 
@@ -123,14 +127,11 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 #. Knihovna není povinna převzít od Producenta rozmnoženinu e-publikace, která nebude splňovat podmínky a technické parametry sjednané v této smlouvě. Knihovna není povinna zpřístupňovat uživatelům e-publikace poskytnuté dle této smlouvy. Knihovna není povinna licenci užívat.
 
-.. raw:: pdf
-
-    PageBreak
 
 Článek 5 - Další práva a povinnosti smluvních stran
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-#. Smluvní strany se dohodly, že veškerá plnění, která si dle této smlouvy poskytnou, a to včetně práv a souhlasů s užitím a zpracováním dat, jsou bezúplatná. Veškeré náklady spojené s k užití a zpracování dat, vytěžením a zužitkováním databáze nese Knihovna.
+#. Smluvní strany se dohodly, že veškerá plnění, která si dle této smlouvy poskytnou, a to včetně práv a souhlasů s užitím a zpracováním dat, jsou bezúplatná. Veškeré náklady spojené s užitím a zpracováním dat, vytěžením a zužitkováním databáze nese Knihovna.
 
 #. Smluvní strany jsou povinny zdržet se jakékoliv činnosti, jež by mohla znemožnit nebo ztížit realizaci předmětu této smlouvy. Smluvní strany jsou povinny se vzájemně informovat dále o všech skutečnostech rozhodných pro řádné plnění této smlouvy.
 
@@ -148,6 +149,10 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Technická ochranná opatření: Jedná se o všechny technické prostředky ochrany autorských práv a jiné technické prostředky chránící obchodní zájmy producentů a omezujících dispozici s elektronickými publikacemi.
 
 #. Knihovna může udělit jiné knihovně vyjmenované v ust. § 3 zákona č. 37/1995 Sb., v pl. znění písemně oprávnění k užití a zpřístupnění obsahu dodaných e-publikací (podlicence), avšak nejvýše v rozsahu stanoveném v ustanovení § 37 odst.1, písm. c) autorského zákona, tedy na koncových terminálech jiné knihovny a bez možnosti zhotovit další elektronické rozmnoženiny.
+
+.. raw:: pdf
+
+    PageBreak
 
 Článek 7 - Závěrečná ustanovení
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -172,21 +177,21 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 #. Tuto smlouvu lze měnit a doplňovat písemnými dodatky.
 
-#. Smlouva je vyhotovena ve čtyřech stejnopisech, z nichž Knihovna obdrží dva stejnopisy a Poskytovatel dva stejnopisy.
+#. Smlouva je vyhotovena ve čtyřech stejnopisech, z nichž Knihovna obdrží dva stejnopisy a „Producent“ dva stejnopisy.
 
 #. Obě smluvní strany potvrzují autentičnost této smlouvy a prohlašují, že si smlouvu přečetly, jejímu obsahu rozumí.
 
 
 |
 |
-| V Praze dne                                                                                 V . . . . . . . . . . . . . . . . . . . dne . . . . . . . . . . . . . . . . . . . .
+| V Praze dne                                                                       V . . . . . . . . . . . . . . . . . . . dne . . . . . . . . . . . . . . . . . . . .
 |
 |
-| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                     . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 |
 |
-| Ing. Tomáš Böhm
-| Generální ředitel
+| Mgr. Miroslav Rovenský
+| pověřený řízením NK ČR
 | Národní knihovna ČR
 | státní příspěvková organizace
 | zastupuje
