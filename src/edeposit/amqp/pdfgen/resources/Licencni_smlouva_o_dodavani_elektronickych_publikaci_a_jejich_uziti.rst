@@ -119,13 +119,17 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 #. E-publikace dodá Producent Knihovně bez zbytečného odkladu od jejich zveřejnění.
 
-#. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Deposit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz“.
+#. V případě, že Producent chce uložit dokumenty v dlouhodobém úložišti Národní knihovny, pak musí dodržet při odevzdávání technické specifikace souborových formátů, uvedené na webu Knihovny „edeposit.nkp.cz_“.
+
+#. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Deposit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz_“.
 
 #. Pokud bude dodaná rozmnoženina e-publikace vadná, požádá Knihovna Producenta o dodání bezvadné rozmnoženiny e-publikace.
 
 #. Producent bere na vědomí, že Knihovna není schopna při procesech dlouhodobé archivace (migrace, emulace, převod na jiná média apod.) vždy zajistit zachování úplné podoby (formy) archivovaných e-publikací. Tyto případy neznamenají porušení této smlouvy ze strany Knihovny ani porušení práv duševního vlastnictví a práv osobnostních.
 
 #. Knihovna není povinna převzít od Producenta rozmnoženinu e-publikace, která nebude splňovat podmínky a technické parametry sjednané v této smlouvě. Knihovna není povinna zpřístupňovat uživatelům e-publikace poskytnuté dle této smlouvy. Knihovna není povinna licenci užívat.
+
+.. _edeposit.nkp.cz: http://edeposit.nkp.cz
 
 
 Článek 5 - Další práva a povinnosti smluvních stran

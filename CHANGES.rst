@@ -1,33 +1,26 @@
 Changelog
 =========
 
+0.4.4
+-----
+    - Added new parts into cotract.
+
 0.4.3
 -----
     - Another small bugfix.
 
-0.4.2
------
-    - Small bugfix of contract text.
-
-0.4.1
------
-    - Updated text of the contract.
-
-0.4.0
------
+0.4.0 - 0.4.2
+-------------
     - Update of the descriptors in the requests generator.
     - Removed unused things from setup.py.
     - Added special style for review. There is now more space for data.
     - Tests metadata updated.
     - Added escaping of the sphinx syntax in data fields.
     - run_tests.sh: Changed PYTHONPATH variable to prioritize local path.
+    - Updated text of the contract.
+    - Small bugfix of contract text.
 
-0.3.5
------
-    - Formating of the contract updated - for the last time I hope.
-
-
-0.3.0 - 0.3.4
+0.3.0 - 0.3.5
 -------------
     - Added support for QR code.
     - Added logo into contract template.
@@ -39,7 +32,7 @@ Changelog
     - Fixed bugs specific to OpenSuse.
     - Tests moved to the root of the package.
     - "jednajici" removed from contract.
-
+    - Formating of the contract updated - for the last time I hope.
 
 0.2.0 - 0.2.4
 -------------
