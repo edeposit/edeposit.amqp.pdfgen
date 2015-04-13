@@ -1,15 +1,11 @@
 Changelog
 =========
 
-0.4.4
+0.4.5
 -----
-    - Added new parts into cotract.
+    - Fixed issue #23 - problem with very long links.
 
-0.4.3
------
-    - Another small bugfix.
-
-0.4.0 - 0.4.2
+0.4.0 - 0.4.4
 -------------
     - Update of the descriptors in the requests generator.
     - Removed unused things from setup.py.
@@ -19,6 +15,8 @@ Changelog
     - run_tests.sh: Changed PYTHONPATH variable to prioritize local path.
     - Updated text of the contract.
     - Small bugfix of contract text.
+    - Another small bugfix.
+    - Added new parts into cotract.
 
 0.3.0 - 0.3.5
 -------------
