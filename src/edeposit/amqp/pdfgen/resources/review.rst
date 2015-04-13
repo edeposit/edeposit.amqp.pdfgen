@@ -15,7 +15,7 @@ $content
 
 .. footer::
     Poznámky
-      | Formulář je obrazem dat odeslaných na server. Hodnoty *Ano*/*Ne* mají svůj protějšek v datové struktuře *bool*, hodnota *Nezvoleno* pak v *None*. Zde zobrazená data reprezentují kolekci, která je odeslána na server, nikoliv nutně popisky ve formuláři tak, jak jsou uvedené na ohlašovací stránce.
+      | Formulář je obrazem kolekce dat odeslaných na server, nikoliv nutně popisků v odesílacím formuláři na ohlašovací stránce. Hodnoty *Ano*/*Ne* mají svůj protějšek v datové struktuře *bool*, hodnota *Nezvoleno* pak v *None*.
 
     |
 

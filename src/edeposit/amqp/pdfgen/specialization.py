@@ -104,7 +104,7 @@ def get_review(review_struct):
     # generate qr code
     with NamedTemporaryFile(suffix=".png") as qr_file:
         url = pyqrcode.create(review_struct.internal_url)
-        url.png(qr_file.name, scale=7)
+        url.png(qr_file.name, scale=6)
 
         # save the file
         qr_file.flush()

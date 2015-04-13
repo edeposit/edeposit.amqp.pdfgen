@@ -8,7 +8,13 @@
 # !!! SEE requests_template.py AND requests_generator.py FOR DETAILS !!!
 #
 # Imports =====================================================================
-from collections import namedtuple, OrderedDict
+import textwrap
+from collections import namedtuple
+from collections import OrderedDict
+
+
+# Constants ===================================================================
+MAX_LINK_SIZE = 80
 
 
 # Functions & classes =========================================================
@@ -126,22 +132,22 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
         ])
 
         rst = ""
-        for key, val in semantic_dict.items():
-            literal_key = getattr(self, key)
+        for key, description in semantic_dict.items():
+            content = getattr(self, key)
 
             # human intepretation of python's internal values
-            if isinstance(literal_key, basestring):
+            if isinstance(content, basestring):
                 try:
-                    literal_key = literal_key.encode("utf-8")
+                    content = content.encode("utf-8")
                 except UnicodeDecodeError:
                     pass
-            elif isinstance(literal_key, bool):
-                literal_key = "Ano" if literal_key else "Ne"
-            elif literal_key is None:
-                literal_key = "Nezvoleno"
-            elif isinstance(literal_key, list):
+            elif isinstance(content, bool):
+                content = "Ano" if content else "Ne"
+            elif content is None:
+                content = "Nezvoleno"
+            elif isinstance(content, list):
                 tmp = []
-                for item in literal_key:
+                for item in content:
                     if "title" in item:
                         try:
                             tmp.append(item["title"].encode("utf-8"))
@@ -149,17 +155,31 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                             tmp.append(item["title"])
                     else:
                         tmp.append(str(item))
-                literal_key = ", ".join(tmp)
+                content = ", ".join(tmp)
 
-            val = val.strip()
-            literal_key = str(literal_key).strip()
+            description = description.strip()
+            content = str(content).strip()
 
-            if key not in ["url", "internal_url"]:
-                literal_key = self.escape_rst_sequences(literal_key)
+            if key in ["url", "internal_url"]:
+                content = self.wrap_long_links(content)
+            else:
+                content = self.escape_rst_sequences(content)
 
-            rst += ":%s: %s\n" % (val, literal_key)
+            rst += ":%s: %s\n" % (description, content)
 
         return str(rst)
+
+    def wrap_long_links(self, s):
+        if len(s) < MAX_LINK_SIZE:
+            return s
+
+        url = s.strip()
+        enchanced = [
+            "`%s <%s>`_" % (url_part, url)
+            for url_part in textwrap.wrap(s, MAX_LINK_SIZE)
+        ]
+
+        return " ".join(enchanced)
 
     def escape_rst_sequences(self, s):
         out = ""
