@@ -32,6 +32,7 @@ def _init_pdf(style_path, header=None, footer=FOOTER):
         language="cs",
         font_path=[
             "/usr/share/fonts",
+            "/usr/share/fonts/truetype/",
             '.',
             '/usr/local/lib/python2.7/dist-packages/rst2pdf/fonts'
         ],
@@ -70,7 +71,7 @@ def gen_pdf(rst_content, style_text, header=None, footer=FOOTER):
         pdf = _init_pdf(f.name, header, footer)
 
     # create PDF
-    pdf.createPdf(text=rst_content, output=out_file_obj)
+    pdf.createPdf(text=rst_content, output=out_file_obj, compressed=True)
 
     # rewind file pointer to begin
     out_file_obj.seek(0)

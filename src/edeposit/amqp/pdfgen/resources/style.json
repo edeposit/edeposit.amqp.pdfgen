@@ -1,4 +1,10 @@
 {
+    "embededFonts": [[
+        "FreeSerif.ttf",
+        "FreeSerifBold.ttf",
+        "FreeSerifItalic.ttf",
+        "FreeSerifBoldItalic.ttf"
+    ]],
     "fontsAlias" : {
         "stdFont": "FreeSerif",
         "stdBold": "FreeSerif-Bold",

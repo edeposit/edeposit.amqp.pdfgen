@@ -110,10 +110,6 @@ c) nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uve
 
 d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
 
-.. raw:: pdf
-
-    PageBreak
-
 Článek 4 - Další ujednání, způsob dodávání e-publikací Knihovně
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -131,6 +127,10 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 .. _edeposit.nkp.cz: http://edeposit.nkp.cz
 
+.. raw:: pdf
+
+    PageBreak
+
 
 Článek 5 - Další práva a povinnosti smluvních stran
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -145,6 +145,7 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 #. Oprávnění Knihovny zpřístupňovat e-publikace včetně užití v rozsahu sjednaném dle této smlouvě zůstává beze změny zachováno i pro dobu po zrušení této smlouvy.
 
+
 Článek 6 - Další ustanovení
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -153,10 +154,6 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 #. Technická ochranná opatření: Jedná se o všechny technické prostředky ochrany autorských práv a jiné technické prostředky chránící obchodní zájmy producentů a omezujících dispozici s elektronickými publikacemi.
 
 #. Knihovna může udělit jiné knihovně vyjmenované v ust. § 3 zákona č. 37/1995 Sb., v pl. znění písemně oprávnění k užití a zpřístupnění obsahu dodaných e-publikací (podlicence), avšak nejvýše v rozsahu stanoveném v ustanovení § 37 odst.1, písm. c) autorského zákona, tedy na koncových terminálech jiné knihovny a bez možnosti zhotovit další elektronické rozmnoženiny.
-
-.. raw:: pdf
-
-    PageBreak
 
 Článek 7 - Závěrečná ustanovení
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
