@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.4.6
+-----
+    - TrueType fonts should be now included in pdf.
+    - Added argument passing to ``run_tests.sh``.
+
 0.4.5
 -----
     - Fixed issue #23 - problem with very long links.
