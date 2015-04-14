@@ -14,7 +14,7 @@ from collections import OrderedDict
 
 
 # Constants ===================================================================
-MAX_LINK_SIZE = 80
+MAX_LINK_SIZE = 83
 
 
 # Functions & classes =========================================================
