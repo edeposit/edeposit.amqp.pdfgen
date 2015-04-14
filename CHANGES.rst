@@ -1,16 +1,16 @@
 Changelog
 =========
 
+0.4.7
+-----
+    - Removed colon from the end of the Producer's name.
+
 0.4.6
 -----
     - TrueType fonts should be now included in pdf.
     - Added argument passing to ``run_tests.sh``.
 
-0.4.5
------
-    - Fixed issue #23 - problem with very long links.
-
-0.4.0 - 0.4.4
+0.4.0 - 0.4.5
 -------------
     - Update of the descriptors in the requests generator.
     - Removed unused things from setup.py.
@@ -22,6 +22,7 @@ Changelog
     - Small bugfix of contract text.
     - Another small bugfix.
     - Added new parts into cotract.
+    - Fixed issue #23 - problem with very long links.
 
 0.3.0 - 0.3.5
 -------------
