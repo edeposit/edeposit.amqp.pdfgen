@@ -15,6 +15,7 @@ from collections import OrderedDict
 
 # Constants ===================================================================
 MAX_LINK_SIZE = 83
+NONE_VAL = "Nezvoleno"
 
 
 # Functions & classes =========================================================
@@ -144,7 +145,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
             elif isinstance(content, bool):
                 content = "Ano" if content else "Ne"
             elif content is None:
-                content = "Nezvoleno"
+                content = NONE_VAL
             elif isinstance(content, list):
                 tmp = []
                 for item in content:
@@ -160,7 +161,10 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
             description = description.strip()
             content = str(content).strip()
 
-            if key in ["url", "internal_url"]:
+            if not content.strip():
+                content = NONE_VAL
+
+            if content != NONE_VAL and key in ["url", "internal_url"]:
                 content = self.wrap_long_links(content)
             else:
                 content = self.escape_rst_sequences(content)
