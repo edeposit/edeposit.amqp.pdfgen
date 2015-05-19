@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.4.9
+-----
+    - Name of the director of Czech National Library removed from contract text.
+
 0.4.8
 -----
     - Blank strings are now recognized as "Nezvoleno".

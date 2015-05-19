@@ -16,7 +16,7 @@ státní příspěvková organizace zřízená MK ČR
 :Sídlo: Klementinum 190, 110 00 Praha 1
 :IČ: 00023221
 :DIČ: CZ00023221
-:Statutární orgán: Mgr. Miroslav Rovenský, pověřený řízením NK ČR
+:Statutární orgán:
 
 dále jen **„Knihovna“**
 
@@ -188,11 +188,9 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 | V Praze dne                                                                       V . . . . . . . . . . . . . . . . . . . dne . . . . . . . . . . . . . . . . . . . .
 |
 |
-| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+| . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 |
 |
-| Mgr. Miroslav Rovenský
-| pověřený řízením NK ČR
 | Národní knihovna ČR
 | státní příspěvková organizace
 | zastupuje
