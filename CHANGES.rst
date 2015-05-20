@@ -1,15 +1,11 @@
 Changelog
 =========
 
-0.4.9
------
-    - Name of the director of Czech National Library removed from contract text.
+0.4.10
+------
+    - Contract text updated as requested.
 
-0.4.8
------
-    - Blank strings are now recognized as "Nezvoleno".
-
-0.4.0 - 0.4.7
+0.4.0 - 0.4.9
 -------------
     - Update of the descriptors in the requests generator.
     - Removed unused things from setup.py.
@@ -25,6 +21,8 @@ Changelog
     - TrueType fonts should be now included in pdf.
     - Added argument passing to ``run_tests.sh``.
     - Removed colon from the end of the Producer's name.
+    - Blank strings are now recognized as "Nezvoleno".
+    - Name of the director of Czech National Library removed from contract text.
 
 0.3.0 - 0.3.5
 -------------

@@ -193,5 +193,3 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 |
 | Národní knihovna ČR
 | státní příspěvková organizace
-| zastupuje
-| RNDr. Tomáš Svoboda
