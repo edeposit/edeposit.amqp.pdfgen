@@ -32,6 +32,7 @@ REVIEW = OrderedDict([  #: This structure is used to construct GenerateReview
     ["nakladatel_vydavatel", "Nakladatel"],
     ["vydano_v_koedici_s", 'Vydáno v koedici s'],
     ["cena", 'Cena v Kč'],
+    ["anotace", "Anotace knihy"],
 
     ["libraries_accessing", "Oprávnění knihovnám"],
     ["libraries_that_can_access", "Seznam knihoven"],

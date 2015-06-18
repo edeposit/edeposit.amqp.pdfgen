@@ -30,9 +30,9 @@
         }
     },
     "pageSetup": {
-        "margin-top": "1cm",
-        "margin-left": "1cm",
-        "margin-right": "1cm",
-        "margin-bottom": "1cm"
+        "margin-top": "0.7cm",
+        "margin-left": "0.7cm",
+        "margin-right": "0.7cm",
+        "margin-bottom": "0.7cm"
     }
 }

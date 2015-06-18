@@ -60,6 +60,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
                                                    'nakladatel_vydavatel',
                                                    'vydano_v_koedici_s',
                                                    'cena',
+                                                   'anotace',
                                                    'libraries_accessing',
                                                    'libraries_that_can_access',
                                                    'is_public',
@@ -90,6 +91,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
         nakladatel_vydavatel (any): Nakladatel
         vydano_v_koedici_s (any): Vydáno v koedici s
         cena (any): Cena v Kč
+        anotace (any): Anotace knihy
         libraries_accessing (any): Oprávnění knihovnám
         libraries_that_can_access (any): Seznam knihoven
         is_public (any): Vystavení na volném internetu
@@ -120,6 +122,7 @@ class GenerateReview(namedtuple("GenerateReview", ['nazev',
             ["nakladatel_vydavatel", "Nakladatel"],
             ["vydano_v_koedici_s", "Vydáno v koedici s"],
             ["cena", "Cena v Kč"],
+            ["anotace", "Anotace knihy"],
             ["libraries_accessing", "Oprávnění knihovnám"],
             ["libraries_that_can_access", "Seznam knihoven"],
             ["is_public", "Vystavení na volném internetu"],
