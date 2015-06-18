@@ -3,6 +3,7 @@ Výpis odeslaného formuláře
 
 .. header::
     .. image:: $resources_path/header_logo.png
+        :height: 140
 
 Přehled hodnot z formuláře tak, jak byl odeslán na server `e-deposit <http://edeposit.nkp.cz>`_ dne $datum v $cas:
 

@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.4.11
+------
+    - Improved resoliton of the logo. Fixed #32.
+    - Added annotation to review. Fixed #31.
+
 0.4.10
 ------
     - Contract text updated as requested.
