@@ -63,10 +63,11 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 
 #. Producent uděluje Knihovně licenci s užitím poskytnutých e-publikací v rozsahu:
 
-   a) přijetí a zaevidování e-publikací do knihovního fondu Knihovny, a to i pro dobu po ukončení této smlouvy,
-   b) zpracování (úprava) e-publikací za účelem jejich dlouhodobé bezpečné archivace k zajištění trvalé udržitelnosti digitálních dat; určovat vhodné formáty pro dlouhodobou ochranu e-publikací a obsahových informací v použitelné podobě, a to i pro dobu po ukončení této smlouvy,
+ a) přijetí a zaevidování e-publikací do knihovního fondu Knihovny, a to i pro dobu po ukončení této smlouvy,
 
-#. Konkrétní rozsah práva užití každé dodané e-publikace určí Producent při dodání e-publikace, a to zpravidla formou on-line interaktivního formuláře.
+ b) zpracování (úprava) e-publikací za účelem jejich dlouhodobé bezpečné archivace k zajištění trvalé udržitelnosti digitálních dat; určovat vhodné formáty pro dlouhodobou ochranu e-publikací a obsahových informací v použitelné podobě, a to i pro dobu po ukončení této smlouvy,
+
+4. Konkrétní rozsah práva užití každé dodané e-publikace určí Producent při dodání e-publikace, a to zpravidla formou on-line interaktivního formuláře.
 
 #. Licenci poskytuje Producent jako nevýhradní, bezúplatnou a na dobu trvání práv Producenta ke zveřejněné elektronické publikaci. Územní rozsah licence je omezen na území České republiky.
 
@@ -102,35 +103,36 @@ znění a zákona č. 121/2000 Sb., autorský zákon, v pl. znění
 
 Knihovna se zavazuje a je oprávněna:
 
-a) pořizovat a spravovat na vlastní náklady databázi dodaných e-publikací a vykonávat práva pořizovatele databáze ve smyslu § 88 a následujících autorského zákona,
+ a. pořizovat a spravovat na vlastní náklady databázi dodaných e-publikací a vykonávat práva pořizovatele databáze ve smyslu § 88 a následujících autorského zákona,
 
-b) umožnit užití e-publikací v rozsahu a způsobem určeným Producentem při dodání e-publikace zpravidla formou on-line interaktivního formuláře,
+ #. umožnit užití e-publikací v rozsahu a způsobem určeným Producentem při dodání e-publikace zpravidla formou on-line interaktivního formuláře,
 
-c) nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uvedeným,
+ #. nakládat s e-publikacemi dodanými Producentem jen způsobem ve smlouvě uvedeným,
 
-d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
+ #. chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím, zejména před neoprávněným zásahem ze strany třetích osob, aby nebyla porušena práva duševního vlastnictví chráněná autorským zákonem.
 
 Článek 4 - Další ujednání, způsob dodávání e-publikací Knihovně
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 #. E-publikace dodá Producent Knihovně bez zbytečného odkladu od jejich zveřejnění.
 
-#. V případě, že Producent chce uložit dokumenty v dlouhodobém úložišti Národní knihovny, pak musí dodržet při odevzdávání technické specifikace souborových formátů, uvedené na webu Knihovny „edeposit.nkp.cz_“.
+#. Poskytovatel bere na vědomí, že Knihovna je vzhledem k současnému stavu technologie schopna plnit oprávnění vyplývající z licence podle ustanovení článku 1 odstavce 3 písmene b) této Smlouvy za následujících podmínek.
 
-#. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Deposit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz_“.
+ a. V dlouhodobém úložišti Knihovny bude uložen pouze dokument, jenž při odevzdání bude splňovat specifikace souborových formátů pro dlouhodobou ochranu, jak budou v čase uložení v aktuální podobě uvedeny na webu Knihovny „http://edeposit.nkp.cz“. V době uzavření smlouvy platí, že pro dlouhodobou ochranu se přijímají pouze soubory ve formátu ePub verze 2 nebo PDF/A – a to podle konkrétních specifikací podle předchozí věty. 
+
+ #. Dokumenty, které nesplní požadavky podle písmene a), bude Knihovna archivovat mimo dlouhodobé úložiště.
+
+ Poskytovatel přijímá tuto podmínku a souhlasí s ní.
+
+3. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Depozit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz_“. 
 
 #. Pokud bude dodaná rozmnoženina e-publikace vadná, požádá Knihovna Producenta o dodání bezvadné rozmnoženiny e-publikace.
 
 #. Producent bere na vědomí, že Knihovna není schopna při procesech dlouhodobé archivace (migrace, emulace, převod na jiná média apod.) vždy zajistit zachování úplné podoby (formy) archivovaných e-publikací. Tyto případy neznamenají porušení této smlouvy ze strany Knihovny ani porušení práv duševního vlastnictví a práv osobnostních.
 
-#. Knihovna není povinna převzít od Producenta rozmnoženinu e-publikace, která nebude splňovat podmínky a technické parametry sjednané v této smlouvě. Knihovna není povinna zpřístupňovat uživatelům e-publikace poskytnuté dle této smlouvy. Knihovna není povinna licenci užívat.
+#. Knihovna není povinna převzít od Producenta rozmnoženinu e-publikace, která nebude splňovat podmínky a technické parametry sjednané v této smlouvě. Knihovna není povinna zpřístupňovat uživatelům e-publikace poskytnuté dle této smlouvy. Knihovna není povinna licenci užívat. 
 
 .. _edeposit.nkp.cz: http://edeposit.nkp.cz
-
-.. raw:: pdf
-
-    PageBreak
-
 
 Článek 5 - Další práva a povinnosti smluvních stran
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -162,11 +164,11 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 
 #. Smlouva může být zrušena:
 
-   a) písemnou dohodou smluvních stran,
-   b) výpovědí ve lhůtě 6 měsíců s účinnosti výpovědi uplynutím jednoho roku od konce kalendářního měsíce, v němž došla výpověď druhé straně,
-   c) odstoupením od smlouvy.
+ a) písemnou dohodou smluvních stran,
+ b) výpovědí ve lhůtě 6 měsíců s účinnosti výpovědi uplynutím jednoho roku od konce kalendářního měsíce, v němž došla výpověď druhé straně,
+ c) odstoupením od smlouvy.
 
-#. Smluvní strany se dohodly, že mohou od této smlouvy odstoupit v případech, kdy to stanoví zákon a tato smlouva. Odstoupení od smlouvy musí být provedeno písemnou formou a je účinné okamžikem jeho doručení druhé smluvní straně.
+3. Smluvní strany se dohodly, že mohou od této smlouvy odstoupit v případech, kdy to stanoví zákon a tato smlouva. Odstoupení od smlouvy musí být provedeno písemnou formou a je účinné okamžikem jeho doručení druhé smluvní straně.
 
 #. Smrtí producenta - fyzické osoby, či zánikem producenta - právnické osoby přechází práva a povinnosti z této smlouvy na jeho právního nástupce. 
 
@@ -191,5 +193,6 @@ d) chránit přiměřeným způsobem práva Producenta k dodaným e-publikacím,
 | . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                           . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 |
 |
+| Generální ředitel NK ČR
 | Národní knihovna ČR
 | státní příspěvková organizace

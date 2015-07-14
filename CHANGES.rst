@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.5.0
+-----
+    - Contract text updated.
+
 0.4.11
 ------
     - Improved resoliton of the logo. Fixed #32.
