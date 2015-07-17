@@ -124,7 +124,7 @@ Knihovna se zavazuje a je oprávněna:
 
  Poskytovatel přijímá tuto podmínku a souhlasí s ní.
 
-3. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Depozit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz_“. 
+3. Knihovna je oprávněna v souvislosti s archivováním a zpřístupněním e-publikací provést jejich úpravu tak, aby výsledná podoba odpovídala účelu jejich užití v rámci této smlouvy, tj. provádět nezbytně nutné technické úpravy za účelem zachování dlouhodobého přístupu k archivovaným e-publikacím. Poskytování e-publikací provádí Producent v informačním systému e-Deposit, technická specifikace dodávaných e-publikací (datových souborů) je podrobně uvedena na webu Knihovny „edeposit.nkp.cz_“. 
 
 #. Pokud bude dodaná rozmnoženina e-publikace vadná, požádá Knihovna Producenta o dodání bezvadné rozmnoženiny e-publikace.
 

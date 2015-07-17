@@ -1,6 +1,10 @@
 Changelog
 =========
 
+0.5.1
+-----
+    - Fixed e-depozit -> e-deposit.
+
 0.5.0
 -----
     - Contract text updated.
